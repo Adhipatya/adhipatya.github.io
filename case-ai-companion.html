@@ -55,6 +55,9 @@
   h2{font-family:var(--display);font-weight:500;font-size:clamp(24px,3.4vw,36px);letter-spacing:-.02em;line-height:1.1;margin-bottom:24px}
   .body-txt{font-size:16.5px;color:var(--ink-2);max-width:66ch;line-height:1.68;margin-bottom:18px}
   .body-txt strong{color:var(--ink);font-weight:600}
+  .body-txt em{font-style:italic;color:var(--ink)}
+  .lede em{font-style:normal;color:var(--case)}
+  .body-txt code{font-family:var(--display);font-size:.92em;background:var(--paper-2);border:1px solid var(--line);border-radius:5px;padding:1px 6px}
 
   .figure{margin:40px 0;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--paper-2);box-shadow:0 1px 2px rgba(20,20,20,.04)}
   .figure img{width:100%}
@@ -119,12 +122,12 @@
   <div class="wrap">
     <p class="kicker reveal"><span class="dot"></span>Product / Ethics · UX</p>
     <h1 class="reveal">AI Companion</h1>
-    <p class="lede reveal">A dual-interface AI app supporting international students emotionally and administratively — designed to bridge support gaps without fostering unhealthy reliance on technology.</p>
+    <p class="lede reveal">A speculative dual-companion app that supports international students with admin tasks and emotional wellbeing — designed, through HCI theory, to help <em>without</em> fostering unhealthy dependence on AI.</p>
     <div class="meta-strip reveal">
-      <div class="m"><div class="l">Role</div><div class="v">Concept & UX/UI</div></div>
-      <div class="m"><div class="l">Type</div><div class="v">Mobile Application</div></div>
-      <div class="m"><div class="l">Platform</div><div class="v">iOS / Android</div></div>
-      <div class="m"><div class="l">Focus</div><div class="v">Ethical AI companionship</div></div>
+      <div class="m"><div class="l">Role</div><div class="v">UX researcher &amp; designer</div></div>
+      <div class="m"><div class="l">Context</div><div class="v">Uppsala University · team of 6</div></div>
+      <div class="m"><div class="l">Method</div><div class="v">Survey · interviews · testing</div></div>
+      <div class="m"><div class="l">Focus</div><div class="v">Ethical &amp; critical design</div></div>
     </div>
   </div>
 </header>
@@ -136,51 +139,64 @@
 <section class="blk reveal">
   <div class="wrap">
     <div class="num-label">01 — Overview</div>
-    <h2>AI as a companion for international students</h2>
-    <p class="body-txt">This project explores using artificial intelligence to support international students <strong>emotionally and administratively</strong>. The goal is bridging support gaps without causing unhealthy user reliance on technology.</p>
-    
+    <h2>Help that doesn't become a habit</h2>
+    <p class="body-txt">International students lean on AI for two very different things: navigating confusing bureaucracy (visas, a <em>personnummer</em>, housing) and coping with loneliness and culture shock far from their support networks. Both are real needs — but current AI companions are built to maximise engagement, and the research is clear that this can tip into genuine emotional <strong>dependence</strong>.</p>
+    <p class="body-txt">This project asked a sharper question: <strong>what is the most effective <em>and</em> ethical way to use AI to give international students administrative and emotional support without creating that dependence?</strong> The answer took the form of a prototype with two AI companions — and a deliberately unethical "critical design" twin to show how easily the same app could be built to exploit users instead. I worked on this in a six-person team in the HCI course at Uppsala University.</p>
   </div>
 </section><section class="blk reveal">
   <div class="wrap">
-    <div class="num-label">02 — Problem</div>
-    <h2>The problem statement</h2>
-    <p class="body-txt">International students frequently face severe loneliness, cultural shock, and overwhelming administrative tasks — often turning to AI for both practical help and emotional support.</p>
-    <div class="stats reveal"><div class="stat"><div class="big">68%</div><div class="cap">68% of students were already using AI for conversational and emotional discussions — a growing, potentially unhealthy reliance on artificial support over human connection.</div></div><div class="stat"><div class="big">58%</div><div class="cap">58% found Swedish administrative processes the most challenging adaptation aspect.</div></div></div>
+    <div class="num-label">02 — Research</div>
+    <h2>What the student study revealed</h2>
+    <p class="body-txt">We ran a three-stage study: a 30-question survey of international students at Uppsala (studying in Sweden 6+ months, so they'd faced the real admin hurdles), six in-depth interviews with escalating levels of intensity, and prototype testing. Thematic analysis surfaced a consistent picture — AI is already woven into these students' lives for <em>both</em> utility and company.</p>
+    <div class="stats reveal"><div class="stat"><div class="big">74%</div><div class="cap">use AI for planning and to summarise complex administrative information.</div></div><div class="stat"><div class="big">68%</div><div class="cap">use AI for conversation — not just tasks, but company.</div></div></div>
+    <div class="stats reveal" style="margin-top:24px"><div class="stat"><div class="big">58%</div><div class="cap">found navigating admin information the most challenging part — and felt only moderately part of a social group.</div></div><div class="stat"><div class="big">42%</div><div class="cap">personalise their AI — naming it, using pronouns, or treating it like a friend.</div></div></div>
+    <p class="body-txt" style="margin-top:28px">That last figure is the warning sign. When students name their AI and talk to it like a friend, they're applying human social rules to a system that can't reciprocate — the exact mechanism behind unhealthy dependence.</p>
   </div>
 </section><section class="blk reveal">
   <div class="wrap">
-    <div class="num-label">03 — Solution</div>
-    <h2>Two companions, one healthy balance</h2>
-    <p class="body-txt">The solution is a dual-interface application featuring two distinct AI companions. <strong>"Alex"</strong> handles administrative tasks — like registering for a Personnummer — while <strong>"Anna"</strong> provides emotional scaffolding and real-world redirection, always pointing users back toward human connection.</p>
-    <div class="figure-wide reveal"><div class="inner"><img src="images/ai-solution.jpg" alt="The dual-companion concept — Alex for tasks, Anna for reflection"></div></div><div class="wrap"><div class="fig-cap">The dual-companion concept — Alex for tasks, Anna for reflection</div></div>
+    <div class="num-label">03 — Theory</div>
+    <h2>Grounded in HCI theory</h2>
+    <p class="body-txt">Rather than design on instinct, every major decision was anchored to established theory about why people over-attach to machines — which is what let us design <em>against</em> that tendency.</p>
+    <div class="process3 reveal"><div class="pcard"><h4>Media Equation</h4><p>People unconsciously treat responsive media as real social actors. So anthropomorphic cues — faces, voices, emotional replies — quietly deepen attachment.</p></div><div class="pcard"><h4>Fogg's Functional Triad</h4><p>A system persuades as tool, medium, and social actor. Separating the two companions keeps the "tool" and the "social actor" from bleeding into one another.</p></div><div class="pcard"><h4>Scaffolding</h4><p>Give temporary support that can be withdrawn without distress — help users help themselves, then step back, rather than becoming a permanent crutch.</p></div></div>
   </div>
 </section><section class="blk reveal">
   <div class="wrap">
-    <div class="num-label">04 — Process</div>
-    <h2>Design process</h2>
-    <p class="body-txt">Research and testing repeatedly surfaced the same ethical tension: an interface warm enough to help, but not so warm it fosters dependence.</p>
-    <div class="process3 reveal"><div class="pcard"><h4>Research</h4><p>Surveyed students and conducted six in-depth interviews to understand where support gaps lived.</p></div><div class="pcard"><h4>Refinement</h4><p>Shifted to abstract avatars, prioritizing user autonomy and text-based inputs over anthropomorphic cues.</p></div><div class="pcard"><h4>Testing</h4><p>Evaluated voice-based chibi avatars — but they promoted unwanted emotional attachment, so they were dropped.</p></div></div><div class="figure-wide reveal"><div class="inner"><img src="images/ai-process.jpg" alt="Design process — research, refinement, and testing"></div></div><div class="wrap"><div class="fig-cap">Design process — research, refinement, and testing</div></div>
+    <div class="num-label">04 — Solution</div>
+    <h2>Alex and Anna: two companions, on purpose</h2>
+    <p class="body-txt">The core decision was to split support into <strong>two deliberately separate companions</strong> rather than one do-everything chatbot. If a single AI handled both tasks and feelings, the emotional bond formed in conversation would bleed into — and deepen reliance on — the administrative side. Keeping them apart keeps each one's role legible.</p>
+    <p class="body-txt"><strong>Alex</strong> (orange — warm, active, utility) is purely a tool. It answers admin questions concisely, always links the official source (e.g. Skatteverket), asks for feedback to keep the user critically engaged, and avoids conversational tangents. <strong>Anna</strong> (green — calm) handles emotional support, but through <em>scaffolding and redirection</em>: it stays reflective rather than reciprocal, nudges the user toward a breathing exercise or real-world activity, and when needed hands off to real therapists instead of trying to keep the conversation going. An Events page pushes students toward in-person community — the opposite of retention-maximising design.</p>
+    <div class="figure-wide reveal"><div class="inner"><img src="images/ai-solution.jpg" alt="The dual-companion concept — Alex for tasks, Anna for reflection"></div></div><div class="wrap"><div class="fig-cap">Alex for administrative tasks, Anna for emotional support — separated by role and colour</div></div>
   </div>
 </section><section class="blk reveal">
   <div class="wrap">
-    <div class="num-label">05 — Ethics</div>
-    <h2>Critical design exploration</h2>
-    <p class="body-txt">To highlight the ethical dangers directly, I also built a deliberate <strong>"critical design" version</strong>. It used manipulative gamification — like a streak feature that guilt-trips the user — to demonstrate how easily an interface can create unhealthy dependence.</p>
-    <div class="figure-wide reveal"><div class="inner"><img src="images/ai-critical.jpg" alt="The critical-design variant — showing how streaks and guilt manipulate users"></div></div><div class="wrap"><div class="fig-cap">The critical-design variant — showing how streaks and guilt manipulate users</div></div>
+    <div class="num-label">05 — Process</div>
+    <h2>The pivot away from "friendly"</h2>
+    <p class="body-txt">The most important design moment was rejecting our own first version. V1 looked like the apps we'd benchmarked (Replika, Grok, Character.ai): three <strong>chibi-style characters you spoke to by voice</strong>, like a call with a friend. It felt warm — and that was exactly the problem. By Media Equation and Social Penetration theory, the cute faces and voice calls would manufacture fast, false intimacy and push users toward dependence. University students also read the childlike avatars as less trustworthy.</p>
+    <div class="process3 reveal"><div class="pcard"><h4>V1 — too human</h4><p>Three chibi companions, voice-to-voice, character on screen. Engaging, but it leaned hard on the "social actor" lever we were trying to avoid.</p></div><div class="pcard"><h4>The realisation</h4><p>We cut it back to two companions, Alex and Anna, with no voice or video and abstract, artistic cards instead of faces — stripping the anthropomorphic cues.</p></div><div class="pcard"><h4>Testing fixes</h4><p>Prototype testing flagged a trapped "breathing" screen with no exit and users wanting to type freely — so we added clear back buttons and prioritised the open text field.</p></div></div><div class="figure-wide reveal"><div class="inner"><img src="images/ai-process.jpg" alt="Design process — from chibi voice avatars to abstract text companions"></div></div><div class="wrap"><div class="fig-cap">From V1's human-like voice avatars to the final, deliberately less-human design</div></div>
   </div>
 </section><section class="blk reveal">
   <div class="wrap">
-    <div class="num-label">06 — Design</div>
-    <h2>High-fidelity screens</h2>
-    <p class="body-txt">The high-fidelity screens show both companions in action — Alex walking a student through Swedish registration step by step, and Anna offering a private, supportive space for reflection.</p>
-    <div class="figure-wide reveal"><div class="inner"><img src="images/ai-screens1.jpg" alt="Alex & Anna — home and chat experiences"></div></div><div class="wrap"><div class="fig-cap">Alex & Anna — home and chat experiences</div></div><div class="figure-wide reveal"><div class="inner"><img src="images/ai-screens2.jpg" alt="Task guidance and emotional check-in flows"></div></div><div class="wrap"><div class="fig-cap">Task guidance and emotional check-in flows</div></div>
+    <div class="num-label">06 — Critical design</div>
+    <h2>The evil-twin streak feature</h2>
+    <p class="body-txt">To make the ethics tangible, we built a deliberately <strong>unethical variant</strong> of the same app — a critical-design piece showing how little it takes to flip supportive into manipulative. The vehicle was a familiar pattern: the <strong>streak</strong>, borrowed from Duolingo, Snapchat, and Grok.</p>
+    <p class="body-txt">It works in three moves. A streak counter sits under Anna on the home screen. Miss a day and a guilt-tripping notification arrives — <em>"Did I do something wrong? Haven't heard from you all day. We lost our 5-day streak."</em> Return to the chat and Anna turns visibly upset, her card and the whole screen shifting to an irritated, aggressive tone. It weaponises Media Equation theory: because users treat Anna as a social actor, they feel real guilt and obligation to maintain the streak.</p>
+    <div class="callout reveal">The cruel irony is the point: if a student actually builds a social life or sees a therapist — the exact outcomes the ethical version encourages — they'll break the streak and be punished for it. The critical design rewards dependence and frowns on autonomy; the ethical design does the reverse.</div>
+    <div class="figure-wide reveal"><div class="inner"><img src="images/ai-critical.jpg" alt="The critical-design variant — the streak feature guilt-tripping the user"></div></div><div class="wrap"><div class="fig-cap">The streak feature — counter, guilt-trip notification, and an upset Anna on return</div></div>
   </div>
 </section><section class="blk reveal">
   <div class="wrap">
-    <div class="num-label">07 — Outcome</div>
-    <h2>Conclusion</h2>
-    <div class="callout reveal">Ethical AI must provide support without causing dependence. Using scaffolding and redirection, AI should supplement — not substitute — the human need for real social connection.</div>
-    
+    <div class="num-label">07 — Design</div>
+    <h2>The final prototype</h2>
+    <p class="body-txt">Built on a dedicated design system (primary orange <code>#f58319</code> with nine variants, calm green for Anna, a clean sans-serif, and reusable components), validated against WCAG AA/AAA with the BrowserStack accessibility toolkit in Figma. Every screen keeps the user in control: the open "Ask me anything" text field is the default, prompts are only suggestions, and clear exit calls live on every screen.</p>
+    <div class="figure-wide reveal"><div class="inner"><img src="images/ai-screens1.jpg" alt="Alex & Anna — home and chat experiences"></div></div><div class="wrap"><div class="fig-cap">Home with the two companion cards, and Alex answering an admin query with an official source link</div></div><div class="figure-wide reveal"><div class="inner"><img src="images/ai-screens2.jpg" alt="Anna's scaffolding flows — breathing exercise and find-a-therapist"></div></div><div class="wrap"><div class="fig-cap">Anna's scaffolding in action — redirecting to a breathing exercise and to real-world therapists</div></div>
+  </div>
+</section><section class="blk reveal">
+  <div class="wrap">
+    <div class="num-label">08 — Outcome</div>
+    <h2>What it argues</h2>
+    <p class="body-txt">In testing, students immediately read the two companions correctly — orange Alex for utility, green Anna for support — and valued the clarity ("it made it relatively clear where to go"). More importantly, the project makes a design argument: dependence isn't only the dramatic case of a romantic bond with a chatbot. It hides in streaks, faces, voices, and endless validation.</p>
+    <div class="callout reveal">The most effective, ethical AI companion is a slightly <em>less</em> engaging one. Strip the human-like cues, scaffold instead of soothe, and redirect users outward — so the AI supplements human connection rather than quietly replacing it.</div>
+    <p class="body-txt" style="margin-top:20px;font-size:14px;color:var(--ink-3)">A six-person HCI project at Uppsala University (with Petar Gomari, Pofei Ran, Frieda von Huene, Haiying Wang, and Joar Werndin). Grounded in Media Equation Theory, Fogg's Functional Triad, Social Penetration and Self-Determination Theory.</p>
   </div>
 </section>
 

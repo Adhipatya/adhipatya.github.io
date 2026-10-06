@@ -55,6 +55,9 @@
   h2{font-family:var(--display);font-weight:500;font-size:clamp(24px,3.4vw,36px);letter-spacing:-.02em;line-height:1.1;margin-bottom:24px}
   .body-txt{font-size:16.5px;color:var(--ink-2);max-width:66ch;line-height:1.68;margin-bottom:18px}
   .body-txt strong{color:var(--ink);font-weight:600}
+  .body-txt em{font-style:italic;color:var(--ink)}
+  .lede em{font-style:normal;color:var(--case)}
+  .body-txt code{font-family:var(--display);font-size:.92em;background:var(--paper-2);border:1px solid var(--line);border-radius:5px;padding:1px 6px}
 
   .figure{margin:40px 0;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--paper-2);box-shadow:0 1px 2px rgba(20,20,20,.04)}
   .figure img{width:100%}
@@ -119,12 +122,12 @@
   <div class="wrap">
     <p class="kicker reveal"><span class="dot"></span>Service Design · UX</p>
     <h1 class="reveal">Biotopic</h1>
-    <p class="lede reveal">A service design for Uppland's natural museum — bridging physical exhibits and digital experiences through a frictionless web game, an AI-Lens app, and a staff portal.</p>
+    <p class="lede reveal">A service design for Biotopia, Uppland's natural history museum — bridging physical exhibits and digital experiences through a frictionless web game, an AI-Lens app, and an AI-assisted staff portal.</p>
     <div class="meta-strip reveal">
-      <div class="m"><div class="l">Role</div><div class="v">Service & UX design</div></div>
-      <div class="m"><div class="l">Type</div><div class="v">Service Design</div></div>
-      <div class="m"><div class="l">Platform</div><div class="v">Web + Mobile + Backend</div></div>
-      <div class="m"><div class="l">Focus</div><div class="v">Physical-to-digital</div></div>
+      <div class="m"><div class="l">Role</div><div class="v">Service &amp; UX designer</div></div>
+      <div class="m"><div class="l">Context</div><div class="v">Uppsala University · team of 4</div></div>
+      <div class="m"><div class="l">Method</div><div class="v">Research through Design · Agile</div></div>
+      <div class="m"><div class="l">Platform</div><div class="v">Poster + Web + App + Backend</div></div>
     </div>
   </div>
 </header>
@@ -136,51 +139,58 @@
 <section class="blk reveal">
   <div class="wrap">
     <div class="num-label">01 — Overview</div>
-    <h2>Biotopic — bridging museum and nature</h2>
-    <p class="body-txt">Biotopic is a <strong>service design for Uppland's natural museum (Biotopia)</strong>. The goal was broadening visitor diversity and enhancing interactions by seamlessly connecting physical exhibits with digital experiences.</p>
-    
+    <h2>Bridging the museum and the wild</h2>
+    <p class="body-txt">Biotopia is a natural history museum in Uppland with over a century of history, known for its theatre-like dioramas of local wildlife. On-site observation revealed two linked problems: its <strong>visitor base was narrow</strong> — overwhelmingly families with young children — and the <strong>connection between its digital resources and physical exhibition was weak</strong>.</p>
+    <p class="body-txt">Biotopic is the support system we designed to address this: a service that restructures Biotopia's existing touchpoints, adds a few carefully chosen new ones, and links potential visitors, partner organisations, and museum staff into one ecosystem. I worked on this as part of a four-person team in the Interaction Design course at Uppsala University.</p>
   </div>
 </section><section class="blk reveal">
   <div class="wrap">
     <div class="num-label">02 — Problem</div>
-    <h2>The problem statement</h2>
-    <p class="body-txt">Biotopia faced limited visitor demographics and a weak connection between physical exhibitions and digital resources. Testing also revealed users rejected text-heavy quizzes and hesitated to download standalone apps.</p>
-    <div class="stats reveal"><div class="stat"><div class="big">85%</div><div class="cap">85% of users expressed a clear reluctance to download a standalone mobile app just for a one-time museum puzzle game.</div></div><div class="stat"><div class="big">82%</div><div class="cap">82% of current visitors are families with children under 10 — a severe lack of engagement from young adults and teenagers.</div></div></div>
+    <h2>Three friction points testing exposed</h2>
+    <p class="body-txt">We began with an ambitious plan: a complex standalone web app and a highly social mobile app. Field research and early user testing quickly dismantled that assumption. Rather than a lack of features, the real barriers were about <strong>trust and effort at the point of entry</strong> — exactly where a visitor decides whether to engage at all.</p>
+    <div class="stats reveal"><div class="stat"><div class="big">No&nbsp;download</div><div class="cap">A clear lack of interest in downloading an app just to play a one-time museum puzzle game.</div></div><div class="stat"><div class="big">QR&nbsp;distrust</div><div class="cap">Deep skepticism toward QR codes, driven by privacy concerns.</div></div></div>
+    <p class="body-txt" style="margin-top:28px">A third finding ran through everything: a <strong>strong rejection of text-heavy, didactic quizzes</strong>. People wanted to look and do, not read and be tested. These three frictions — download resistance, QR distrust, and quiz fatigue — became the constraints the whole design had to solve around.</p>
   </div>
 </section><section class="blk reveal">
   <div class="wrap">
     <div class="num-label">03 — Solution</div>
-    <h2>A frictionless physical-to-digital ecosystem</h2>
-    <p class="body-txt">We created a frictionless ecosystem. Visitors engage with <strong>physical posters</strong>, play a <strong>web-based pixel-art game</strong> (no download required), and use the Biotopic app's <strong>AI-Lens</strong> to explore nature — culminating in an in-person museum reward.</p>
-    <div class="figure-wide reveal"><div class="inner"><img src="images/bio-solution.jpg" alt="The Biotopic ecosystem — from poster to app to museum reward"></div></div><div class="wrap"><div class="fig-cap">The Biotopic ecosystem — from poster to app to museum reward</div></div>
+    <h2>A frictionless physical-to-digital loop</h2>
+    <p class="body-txt">The pivot was to <strong>strip away friction instead of adding features</strong>. The result is a single connected loop that meets people where they already are — on a walk, at a gym, in a park — and draws them gently inward toward the museum and the local climate conversation.</p>
+    <p class="body-txt">Physical <strong>posters</strong> in public spaces act as the entry point, pairing a captivating animal illustration with a glimpse of a reward and a QR code. That code opens a <strong>pixel-art web activity embedded in Biotopia's existing website</strong> — no download, and built on infrastructure the museum already pays for. Completing it earns the first puzzle piece and invites the visitor to collect a physical sticker in person and continue in the <strong>Biotopic app</strong>, whose AI-Lens turns everyday nature into something to identify, collect, and share. The loop closes inside Biotopia itself, where finishing the puzzle means talking to staff and joining the community.</p>
+    <p class="body-txt">To address the QR distrust head-on, we designed for <strong>radical transparency</strong>: Google and Apple sign-in paired with clear GDPR and terms-of-service notices, so the first interaction builds trust rather than asking for blind faith.</p>
+    <div class="figure-wide reveal"><div class="inner"><img src="images/bio-solution.jpg" alt="The Biotopic ecosystem — from poster to app to museum reward"></div></div><div class="wrap"><div class="fig-cap">The Biotopic ecosystem — poster to web activity to app to in-person museum reward</div></div>
   </div>
 </section><section class="blk reveal">
   <div class="wrap">
     <div class="num-label">04 — Systems</div>
-    <h2>System map & interaction flows</h2>
-    <p class="body-txt">The service touches three surfaces — a web activity, the mobile AI-Lens, and a backend portal for museum staff. Mapping how they hand off to each other was central to keeping the experience seamless.</p>
-    <div class="figure-wide reveal"><div class="inner"><img src="images/bio-systemmap.jpg" alt="System map connecting physical, web, and app touchpoints"></div></div><div class="wrap"><div class="fig-cap">System map connecting physical, web, and app touchpoints</div></div><div class="figure-wide reveal"><div class="inner"><img src="images/bio-flow1.jpg" alt="Interaction flow across the ecosystem"></div></div><div class="wrap"><div class="fig-cap">Interaction flow across the ecosystem</div></div>
+    <h2>A hybrid system map</h2>
+    <p class="body-txt">Because visitors constantly alternate between physical and digital environments, a standard service blueprint wasn't enough. Our main design outcome was a <strong>hybrid system map</strong> that merges traditional user-journey mapping with backend data-transition logic — visualising, in one artefact, the intersection of physical triggers, digital interfaces, and the data systems that connect them.</p>
+    <p class="body-txt">Alongside it, detailed interaction flows separate the <strong>user side</strong> (pre-visit, on-site, post-visit) from the <strong>staff and backend side</strong> (line of visibility), so the experience that feels effortless to a visitor is also demonstrably manageable for the museum.</p>
+    <div class="figure-wide reveal"><div class="inner"><img src="images/bio-systemmap.jpg" alt="Hybrid system map connecting physical, web, and app touchpoints"></div></div><div class="wrap"><div class="fig-cap">The hybrid system map — physical triggers, digital interfaces, and data flow in one view</div></div><div class="figure-wide reveal"><div class="inner"><img src="images/bio-flow1.jpg" alt="Interaction flow across the ecosystem"></div></div><div class="wrap"><div class="fig-cap">Interaction flow across pre-visit, on-site, and post-visit stages, with the staff/backend line of visibility</div></div>
   </div>
 </section><section class="blk reveal">
   <div class="wrap">
     <div class="num-label">05 — Process</div>
-    <h2>Design process</h2>
-    <p class="body-txt">The research made the friction points unmistakable, and the refinement removed each barrier to entry in turn.</p>
-    <div class="process3 reveal"><div class="pcard"><h4>Research</h4><p>Observed that demographics heavily skewed toward families (82%) and identified a weak link between physical exhibits and digital resources.</p></div><div class="pcard"><h4>Testing</h4><p>Revealed major friction: 85% refused standalone downloads, 73% abandoned text-heavy quizzes, and 65% distrusted QR codes over privacy.</p></div><div class="pcard"><h4>Refinement</h4><p>Built a frictionless ecosystem using agile methods — a pixel-art web game and a visual AI-Lens to bridge the physical-digital gap.</p></div></div><div class="figure-wide reveal"><div class="inner"><img src="images/bio-process.jpg" alt="Design process — research, testing, and refinement"></div></div><div class="wrap"><div class="fig-cap">Design process — research, testing, and refinement</div></div>
+    <h2>Research through Design, run as Agile</h2>
+    <p class="body-txt">We followed an iterative <strong>research-through-design</strong> methodology across two sprints, managed in Jira. On-site non-participant observation and <strong>system walkthroughs</strong> of Biotopia's website and pamphlets grounded our early assumptions, which user testing then forced us to revise. Throughout, we used <strong>annotated portfolios</strong> to document each artefact and capture the knowledge generated between iterations.</p>
+    <div class="process3 reveal"><div class="pcard"><h4>Research</h4><p>On-site observation and system walkthroughs revealed a family-skewed audience and a weak link between physical exhibits and digital resources.</p></div><div class="pcard"><h4>Test &amp; pivot</h4><p>Testing exposed download resistance, QR privacy distrust, and rejection of text-heavy quizzes — forcing a strategic pivot away from a standalone app.</p></div><div class="pcard"><h4>Refine</h4><p>Reframed the solution around frictionless entry: a web-embedded pixel-art game, a visual AI-Lens, and transparent sign-in, iterated sprint by sprint.</p></div></div><div class="figure-wide reveal"><div class="inner"><img src="images/bio-process.jpg" alt="Design process — research, testing, and refinement across two sprints"></div></div><div class="wrap"><div class="fig-cap">Two agile sprints of research, testing, and refinement</div></div>
   </div>
 </section><section class="blk reveal">
   <div class="wrap">
     <div class="num-label">06 — Features</div>
-    <h2>Feature breakdown</h2>
-    <p class="body-txt"><strong>Web-Activity</strong> — frictionless entry via poster QR codes leading to an engaging pixel-art game. <strong>AI-Lens App</strong> — a mobile tool letting users capture, identify, and map local wildlife sightings. <strong>Backend Portal</strong> — an AI-powered system helping museum staff moderate content and create campaigns.</p>
-    <div class="figure-wide reveal"><div class="inner"><img src="images/bio-screens1.jpg" alt="Biotopia Tracker — the web-to-app onboarding reward loop"></div></div><div class="wrap"><div class="fig-cap">Biotopia Tracker — the web-to-app onboarding reward loop</div></div><div class="figure-wide reveal"><div class="inner"><img src="images/bio-screens2.jpg" alt="AI-Lens — wildlife identification, maps, and guided walks"></div></div><div class="wrap"><div class="fig-cap">AI-Lens — wildlife identification, maps, and guided walks</div></div>
+    <h2>Four parts, one loop</h2>
+    <p class="body-txt">The <strong>web activity</strong> is a pixel-art game embedded in Biotopia's own site — the frictionless first touch that hands off a puzzle piece and a reason to visit. The <strong>Biotopic app</strong> centres on an <strong>AI-Lens</strong> that lets people capture, identify, and learn about a plant or animal they come across, plus News &amp; Events and an Activity Map of recent local sightings. The <strong>in-person museum activity</strong> closes the loop: visitors complete the puzzle among the dioramas and collect their reward from staff.</p>
+    <p class="body-txt">Behind all of it sits a <strong>backend administrator portal</strong>. It lets staff create posters, edit and approve activities, and moderate user profiles — with AI-powered tools automating time-consuming work like content moderation, so the system stays manageable for a small museum team with real resource limits.</p>
+    <div class="figure-wide reveal"><div class="inner"><img src="images/bio-screens1.jpg" alt="Web activity and app — the web-to-app reward loop"></div></div><div class="wrap"><div class="fig-cap">From poster to pixel-art web activity to the app — the reward loop that pulls visitors inward</div></div><div class="figure-wide reveal"><div class="inner"><img src="images/bio-screens2.jpg" alt="Biotopic AI-Lens — wildlife identification, activity map, and sightings"></div></div><div class="wrap"><div class="fig-cap">The Biotopic AI-Lens — identify a species, add it to the map, and see what others have spotted nearby</div></div>
   </div>
 </section><section class="blk reveal">
   <div class="wrap">
     <div class="num-label">07 — Outcome</div>
-    <h2>Conclusion</h2>
-    <div class="callout reveal">By blending physical triggers with digital utility, Biotopic bridges the museum-to-nature gap — a scalable, sustainable model for community engagement without imposing heavy initial download barriers.</div>
-    
+    <h2>What it contributes</h2>
+    <p class="body-txt">In small-scale user testing, the prototype attracted a more diverse range of visitors than Biotopia's current experience while improving the interactions already on offer — early evidence that stripping away entry friction, rather than adding features, was the right bet.</p>
+    <p class="body-txt">Beyond the museum, the <strong>poster → web → app loop is a transferable pattern</strong>. Retail, eco-tourism, and urban-planning contexts face the same challenge of converting offline audiences into engaged digital communities without heavy download or privacy friction, and the hybrid system map offers a reusable way to design for it.</p>
+    <div class="callout reveal">The project reinforced a core lesson: successful service design is far more than a polished interface. It is the orchestration of user behaviour, staff capability, and a disciplined process — harmonising what users want with what the organisation can realistically sustain.</div>
+    <p class="body-txt" style="margin-top:20px;font-size:14px;color:var(--ink-3)">A four-person Interaction Design project at Uppsala University (with Petar Gomari, Mengxi Jia, and Pofei Ran). Some illustrative assets — stickers, avatars, and the pixel-art backdrop — were produced with AI image tools under the team's creative direction.</p>
   </div>
 </section>
 
